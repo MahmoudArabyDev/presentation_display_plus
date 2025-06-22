@@ -35,11 +35,11 @@ class PresentationDisplaysPlugin : FlutterPlugin, ActivityAware, MethodChannel.M
     companion object {
         private const val viewTypeId = "presentation_displays_plugin"
 
-        @JvmStatic
-        fun registerWith(registrar: PluginRegistry.Registrar) {
-            val channel = MethodChannel(registrar.messenger(), viewTypeId)
-            channel.setMethodCallHandler(PresentationDisplaysPlugin())
-        }
+//        @JvmStatic
+//        fun registerWith(registrar: PluginRegistry.Registrar) {
+//            val channel = MethodChannel(registrar.messenger(), viewTypeId)
+//            channel.setMethodCallHandler(PresentationDisplaysPlugin())
+//        }
     }
 
     override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
